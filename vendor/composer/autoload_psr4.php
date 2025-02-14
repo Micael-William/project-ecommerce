@@ -7,11 +7,19 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Ecommerce\\usuario\\' => array($baseDir . '/src/controllers'),
-    'Ecommerce\\produto\\' => array($baseDir . '/src/controllers'),
+    'Ecommerce\\requisicao\\' => array($baseDir . '/src/controllers'),
+    'Ecommerce\\produto\\' => array($baseDir . '/src/classes'),
+    'Ecommerce\\produtoController\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\novoUsuario\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\model\\' => array($baseDir . '/src/models'),
+    'Ecommerce\\logoutAcessUser\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\login\\' => array($baseDir . '/src/controllers'),
+    'Ecommerce\\loginAcessUser\\' => array($baseDir . '/src/controllers'),
+    'Ecommerce\\listProduct\\' => array($baseDir . '/src/models'),
     'Ecommerce\\formularioNovoUsuario\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\entidade\\' => array($baseDir . '/src/classes'),
+    'Ecommerce\\editProduct\\' => array($baseDir . '/src/controllers'),
+    'Ecommerce\\editProductForm\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\config\\' => array($baseDir . '/config'),
+    'Ecommerce\\Message\\' => array($baseDir . '/src/controllers'),
 );

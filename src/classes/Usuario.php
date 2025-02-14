@@ -6,8 +6,8 @@ class Usuario {
     private string $email;
     private string $senha;
 
-    public function __construct($id, $nome, $email, $senha) {
-        $this->id = $id;
+    public function __construct($nome, $email, $senha) {
+        // $this->id = $id;
         $this->nome = $nome;
         $this->email = $email;
         $this->senha = $senha;

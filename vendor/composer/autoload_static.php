@@ -10,13 +10,21 @@ class ComposerStaticInita13f3d76cf8c31843a6b531f954d831e
         'E' => 
         array (
             'Ecommerce\\usuario\\' => 18,
+            'Ecommerce\\requisicao\\' => 21,
             'Ecommerce\\produto\\' => 18,
+            'Ecommerce\\produtoController\\' => 28,
             'Ecommerce\\novoUsuario\\' => 22,
             'Ecommerce\\model\\' => 16,
+            'Ecommerce\\logoutAcessUser\\' => 26,
             'Ecommerce\\login\\' => 16,
+            'Ecommerce\\loginAcessUser\\' => 25,
+            'Ecommerce\\listProduct\\' => 22,
             'Ecommerce\\formularioNovoUsuario\\' => 32,
             'Ecommerce\\entidade\\' => 19,
+            'Ecommerce\\editProduct\\' => 22,
+            'Ecommerce\\editProductForm\\' => 26,
             'Ecommerce\\config\\' => 17,
+            'Ecommerce\\Message\\' => 18,
         ),
     );
 
@@ -25,7 +33,15 @@ class ComposerStaticInita13f3d76cf8c31843a6b531f954d831e
         array (
             0 => __DIR__ . '/../..' . '/src/controllers',
         ),
+        'Ecommerce\\requisicao\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
+        ),
         'Ecommerce\\produto\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/classes',
+        ),
+        'Ecommerce\\produtoController\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/controllers',
         ),
@@ -37,9 +53,21 @@ class ComposerStaticInita13f3d76cf8c31843a6b531f954d831e
         array (
             0 => __DIR__ . '/../..' . '/src/models',
         ),
+        'Ecommerce\\logoutAcessUser\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
+        ),
         'Ecommerce\\login\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/controllers',
+        ),
+        'Ecommerce\\loginAcessUser\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
+        ),
+        'Ecommerce\\listProduct\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/models',
         ),
         'Ecommerce\\formularioNovoUsuario\\' => 
         array (
@@ -49,9 +77,21 @@ class ComposerStaticInita13f3d76cf8c31843a6b531f954d831e
         array (
             0 => __DIR__ . '/../..' . '/src/classes',
         ),
+        'Ecommerce\\editProduct\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
+        ),
+        'Ecommerce\\editProductForm\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
+        ),
         'Ecommerce\\config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config',
+        ),
+        'Ecommerce\\Message\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
         ),
     );
 

@@ -2,8 +2,9 @@
 namespace Ecommerce\novoUsuario;
 use Ecommerce\entidade\Usuario;
 use Ecommerce\model\UsuarioModel;
+use Ecommerce\requisicao\InterfaceRequisicao;
 
-class NovoCadastroController {
+class NovoCadastroController implements InterfaceRequisicao {
 
     public function requisicao() 
     {
@@ -15,12 +16,13 @@ class NovoCadastroController {
 
             if (empty($nome) || empty($email) || empty($senha)) 
             {
-                header("Location: /login?erro=Campos obrigatórios não preenchidos");
+                header("Location: /login?erro=0");
                 return;
             }
+            $senhaCriptografada = password_hash($senha, PASSWORD_ARGON2ID);
 
             $model = new UsuarioModel();
-            $usuario = new Usuario(10, $nome, $email, $senha);   
+            $usuario = new Usuario( $nome, $email, $senhaCriptografada);   
             $retorno = $model->create($usuario);
 
             if ($retorno == false) 

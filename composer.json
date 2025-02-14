@@ -4,13 +4,21 @@
         "psr-4": {
             
             "Ecommerce\\entidade\\": "src/classes/",
+            "Ecommerce\\produto\\": "src/classes/",
             "Ecommerce\\formularioNovoUsuario\\": "src/controllers/",
             "Ecommerce\\login\\": "src/controllers/",
             "Ecommerce\\usuario\\": "src/controllers/",
             "Ecommerce\\novoUsuario\\": "src/controllers/",
-            "Ecommerce\\produto\\": "src/controllers/",
+            "Ecommerce\\produtoController\\": "src/controllers/",
+            "Ecommerce\\editProductForm\\": "src/controllers/",
+            "Ecommerce\\editProduct\\": "src/controllers/",
+            "Ecommerce\\requisicao\\": "src/controllers/",
+            "Ecommerce\\loginAcessUser\\": "src/controllers/",
+            "Ecommerce\\logoutAcessUser\\": "src/controllers/",
+            "Ecommerce\\Message\\": "src/controllers/",
             "Ecommerce\\config\\": "config/",
-            "Ecommerce\\model\\": "src/models/"
+            "Ecommerce\\model\\": "src/models/",
+            "Ecommerce\\listProduct\\": "src/models/"
         }
     },
     "authors": [
