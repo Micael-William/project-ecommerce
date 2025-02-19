@@ -10,6 +10,7 @@
             "Ecommerce\\usuario\\": "src/controllers/",
             "Ecommerce\\novoUsuario\\": "src/controllers/",
             "Ecommerce\\produtoController\\": "src/controllers/",
+            "Ecommerce\\HomeController\\": "src/controllers/",
             "Ecommerce\\editProductForm\\": "src/controllers/",
             "Ecommerce\\editProduct\\": "src/controllers/",
             "Ecommerce\\requisicao\\": "src/controllers/",

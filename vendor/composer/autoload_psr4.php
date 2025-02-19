@@ -22,4 +22,5 @@ return array(
     'Ecommerce\\editProductForm\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\config\\' => array($baseDir . '/config'),
     'Ecommerce\\Message\\' => array($baseDir . '/src/controllers'),
+    'Ecommerce\\HomeController\\' => array($baseDir . '/src/controllers'),
 );
