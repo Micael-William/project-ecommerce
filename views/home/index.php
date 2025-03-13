@@ -9,8 +9,6 @@
 
   <title>Ecommerce</title>
   <link rel="stylesheet" href="./css/index.css">
-  <!--<script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmhpu6Gmdz658N_iiciYk8WbR3RUJqbf4&callback=initMap"></script>-->
 </head>
 
 
@@ -116,58 +114,8 @@
       </div>
     <?php endforeach; ?>
   </main>
-  <!-- <button onclick="getLocation()">Obter Localização</button>
-    <div id="map" style="width: 100%; height: 400px;"></div> -->
 
-    <script>
-      
-        // function initMap() {
-        //     console.log("API carregada corretamente");
-        // }
-
-        // function getLocation() {
-        //     if (navigator.geolocation) {
-        //         navigator.geolocation.getCurrentPosition(showPosition, showError);
-        //     } else {
-        //         alert("Geolocalização não suportada pelo seu navegador.");
-        //     }
-        // }
-
-        // function showPosition(position) {
-        //     var lat = position.coords.latitude;
-        //     var lng = position.coords.longitude;
-        //     var map = new google.maps.Map(document.getElementById("map"), {
-        //         center: { lat: lat, lng: lng },
-        //         zoom: 15
-        //     });
-        //     new google.maps.marker.AdvancedMarkerElement({
-        //         position: { lat: lat, lng: lng },
-        //         map: map
-        //     });
-        // }
-
-        // function showError(error) {
-        //     switch (error.code) {
-        //         case error.PERMISSION_DENIED:
-        //             alert("Usuário negou a solicitação de geolocalização.");
-        //             break;
-        //         case error.POSITION_UNAVAILABLE:
-        //             alert("Informações de localização indisponíveis.");
-        //             break;
-        //         case error.TIMEOUT:
-        //             alert("A solicitação para obter a localização expirou.");
-        //             break;
-        //         case error.UNKNOWN_ERROR:
-        //             alert("Ocorreu um erro desconhecido.");
-        //             break;
-        //     }
-        // }
-
-        // document.addEventListener("touchmove", function(event) {}, { passive: true });
-        // document.addEventListener("touchstart", function(event) {}, { passive: true });
-
-    </script>
-    </scrip>
+  
   <script src="./js/index.js"></script>
 </body>
 </html>
