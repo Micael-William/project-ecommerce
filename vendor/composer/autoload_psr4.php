@@ -21,6 +21,7 @@ return array(
     'Ecommerce\\editProduct\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\editProductForm\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\config\\' => array($baseDir . '/config'),
+    'Ecommerce\\carrinho\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\Message\\' => array($baseDir . '/src/controllers'),
     'Ecommerce\\HomeController\\' => array($baseDir . '/src/controllers'),
 );

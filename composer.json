@@ -6,6 +6,7 @@
             "Ecommerce\\entidade\\": "src/classes/",
             "Ecommerce\\produto\\": "src/classes/",
             "Ecommerce\\formularioNovoUsuario\\": "src/controllers/",
+            "Ecommerce\\carrinho\\": "src/controllers/",
             "Ecommerce\\login\\": "src/controllers/",
             "Ecommerce\\usuario\\": "src/controllers/",
             "Ecommerce\\novoUsuario\\": "src/controllers/",

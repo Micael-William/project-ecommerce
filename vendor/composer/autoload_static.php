@@ -24,6 +24,7 @@ class ComposerStaticInita13f3d76cf8c31843a6b531f954d831e
             'Ecommerce\\editProduct\\' => 22,
             'Ecommerce\\editProductForm\\' => 26,
             'Ecommerce\\config\\' => 17,
+            'Ecommerce\\carrinho\\' => 19,
             'Ecommerce\\Message\\' => 18,
             'Ecommerce\\HomeController\\' => 25,
         ),
@@ -89,6 +90,10 @@ class ComposerStaticInita13f3d76cf8c31843a6b531f954d831e
         'Ecommerce\\config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config',
+        ),
+        'Ecommerce\\carrinho\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controllers',
         ),
         'Ecommerce\\Message\\' => 
         array (

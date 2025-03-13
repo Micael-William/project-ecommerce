@@ -1,0 +1,74 @@
+
+.menu-produtos {
+    /* background-color: #222; */
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.logo-ecommerce {
+    width: 290px;
+    height: 290px;
+    text-align: center;
+}
+
+.campo-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.btn-busca {
+    /* border: none; */
+    /* background: transparent; */
+    padding: 5px;
+}
+
+.campo-ecommerce {
+    border: none;
+    outline: none;
+    width: 30vw;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.campo-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.link-ecommerce {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #13131F;
+}
+
+
+.link-eco {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #13131F; */
+}
+
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links>a {
+    text-decoration: none;
+    margin: 0 15px;
+}

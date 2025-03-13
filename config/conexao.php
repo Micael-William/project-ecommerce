@@ -1,10 +1,9 @@
 <?php
 namespace Ecommerce\config;
-use Pdo;
+use PDO;
 class Conexao{
     
     public function getConexao(){
-        // require_once "../db_ecommerce.sqlite"
         $banco  = "../db_ecommerce.sqlite";
         return new PDO("sqlite:".$banco);
     }

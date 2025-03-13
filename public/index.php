@@ -2,6 +2,7 @@
 <?php
 require_once "../vendor/autoload.php";
 
+use Ecommerce\carrinho\CarrinhoController;
 use Ecommerce\editProduct\EditProduct;
 use Ecommerce\editProductForm\EditProductForm;
 use Ecommerce\login\LoginController;
@@ -19,9 +20,9 @@ session_start();
 $pathInfo = $_SERVER['PATH_INFO'] ?? '/';
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 
-if (!array_key_exists('logado', $_SESSION) && $pathInfo !== '/login') {
-    header('Location: /login');
-}
+// if (!array_key_exists('logado', $_SESSION) && $pathInfo !== '/login') {
+//     header('Location: /login');
+// }
 
 switch ($pathInfo) {
     case '/':
@@ -48,9 +49,13 @@ switch ($pathInfo) {
         break;
     case '/home':
         HomeController::view();
+        $req = new CarrinhoController();
+        $req->getProductJson();
         break;
-    case '/produtos':
-        ListagemProdutoController::view();
+    case '/produtos/json':
+        $req = new CarrinhoController();
+        $req->print();
+       
         break;
 
     case '/editar-produto':

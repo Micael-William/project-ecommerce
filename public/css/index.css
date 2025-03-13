@@ -1,94 +1,387 @@
-/* From Uiverse.io by Yaya12085 */ 
-.form {
-  background-color: #fff;
-  display: block;
-  padding: 1rem;
-  max-width: 350px;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+@import url(../css/reset.css);
+/* @import url(../css/menu.css); */
+/* @import url(../css/form.css);
+@import url(../css/table.css);
+@import url(../css/main.css);
+ */
+
+
+body, html {
+    width: 100vw;
+    /* height: 100%; */
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: rgb(241, 241, 241);
+
 }
 
-.form-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  text-align: center;
-  color: #000;
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.input-container {
-  position: relative;
+.secao-imagens {
+    display: flex;
 }
 
-.input-container input, .form button {
-  outline: none;
-  border: 1px solid #e5e7eb;
-  margin: 8px 0;
+.secao-imagens > ul {
+    display: flex;
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+
+    height: 200px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    /* white-space: nowrap; */
 }
 
-.input-container input {
-  background-color: #fff;
-  padding: 1rem;
-  padding-right: 3rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  width: 300px;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+.link-contato {
+    display: none;
 }
 
-.input-container span {
-  display: grid;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  place-content: center;
+.link-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.link-menu > a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
 }
 
-.input-container span svg {
-  color: #9CA3AF;
-  width: 1rem;
-  height: 1rem;
+.menu-mobile, .close {
+    padding: 5px;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
 }
 
-.submit {
-  display: block;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: #4F46E5;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  width: 100%;
-  border-radius: 0.5rem;
-  text-transform: uppercase;
+.close {
+    text-align: end;
 }
 
-.signup-link {
-  color: #6B7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: center;
+.abrir-menu{
+    position: absolute;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 60vw;
+    background-color: #000;
 }
 
-.signup-link a {
-  text-decoration: underline;
+.abrir-menu > a {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f3f4f6;  
+.fechar {
+    position: absolute;
+    right: -100%;
 }
 
-.none  {
-  display: none;
+.abrir-menu > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
 }
+
+.abrir{
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+
+.banner {
+    width: 100vw;
+    height: 217px;
+    /* object-fit:contain; */
+}
+.logo-produto{
+    object-fit:contain;
+    width: 272px;
+    height: 282px;
+
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* border: 1px solid #000; */
+    /* background-color: rgb(241, 241, 241); */
+
+}
+
+.container-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 90%;
+    border: 0.5px solid #fefe;
+    border-radius: 5px;
+    box-shadow: 15px;
+    /* margin-top: 10px; */
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.nome-produto {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.preco-produto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #493D9E;
+}
+
+.btn-carrinho {
+    border: none;
+    padding: 15px;
+    background-color: #00569E;
+    color: #fff;
+    border-radius: 5px;
+    width: 60vw;
+    /* max-width: 80%; */
+}
+
+.cart {
+    margin-right:  5px;
+}
+
+h1 {
+    /* text-align: left !important; */
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+span {
+    font-family: sans-serif;
+}
+
+.avaliacao {
+    display: flex;
+}
+
+.icone-star {
+    color: yellow;
+    /* background-color: yellow; */
+    /* font-weight: bold; */
+}
+
+.container-pesquisa{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* border: 1px solid #000; */
+    /* background-color: #493D9E; */
+    margin-right:  10px;
+    /* background-color: #D9D9D9; */
+}
+
+.container-pesquisa > div {
+    border: 1px solid #fefe;
+    width: 70vw;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+}
+
+.container-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: 100vw; */
+    padding: 15px;
+}
+
+.container-menu {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #403F44;
+
+}
+
+input {
+    width: 45vw;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.busca {
+    height: 30px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.notificacao-carrinho {
+    background-color: #EC3B4D;
+    font-size: 11px;
+    color: #fff;
+    padding: 3px;
+    border-radius: 100%;
+    position: absolute;
+    top: -32%;
+    right: 7px;
+}
+
+.notificacao-favoritos {
+    background-color: #EC3B4D;
+    font-size: 11px;
+    color: #fff;
+    padding: 3px;
+    border-radius: 100%;
+    position: absolute;
+    top: -32%;
+    right: 41px;
+}
+
+.links > a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 9px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.links a > i {
+    font-size: 17px;
+}
+
+.links  {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btn-pesquisa {
+    height: 35px;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-carrinho {
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.secao-categoria {
+    display: flex;
+    width: 100vw;
+    /* border: 1px solid #000; */
+    /* margin-top: 20px; */
+    border-bottom: 1px solid #000;
+}
+
+.secao-categoria > p {
+    border-left: 1px solid #000;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+.lista-categoria{
+    cursor: pointer;
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    /* margin-top: 10px; */
+}
+
+.item-categoria{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* bo */
+    padding: 0.5rem;
+    /* color: #fff; */
+    /* border: 1px solid #00569E;
+    background-color: #00569E; */
+    line-height: 1.125rem;
+    font-weight: 600;
+    /* border-radius: 0.25rem; */
+    font-size: 0.875rem;
+    /* height: 100px; */
+}
+
+.quantidade {
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+}
+
+.favoritar{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+.favoritar > i {
+    font-size: 24px;
+    color: #EC3B4D;
+    /* background-color: #EC3B4D; */
+}
+
