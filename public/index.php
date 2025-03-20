@@ -47,7 +47,7 @@ switch ($pathInfo) {
     case '/usuarios':
         ListagemUsuarioController::view();
         break;
-    case '/home':
+    case 'https://project-ecommerce-1dcaaiyug-micaelwilliams-projects.vercel.app/home':
         HomeController::view();
         $req = new CarrinhoController();
         $req->getProductJson();
