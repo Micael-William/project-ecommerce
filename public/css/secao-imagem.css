@@ -1,0 +1,31 @@
+.secao-imagens {
+    display: flex;
+    background-color: #ffff;
+}
+
+.secao-imagens > ul {
+    display: flex;
+    list-style: none;
+    height: 117px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.lista-imagens > li {
+    margin: 0 10px;
+}
+
+.banner {
+    width: 58px;
+    height: 50px;
+    object-fit:fill;
+}
+
+.legenda {
+    line-height: 2.33;
+    font-weight: bold;
+    text-align: center;
+}

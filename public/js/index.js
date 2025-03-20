@@ -4,10 +4,16 @@ const btnFechar = document.querySelector('.close');
 const container = document.querySelector('.abrir-menu');
 const containerFechar = document.querySelector('.fechar-menu');
 
+const body = document.querySelector('body');
+const html = document.querySelector('html');
+
 btnAbrir.addEventListener('click', () => {
   container.classList.add('abrir');
+  body.classList.add('overflow-hidden');
+  html.classList.add('overflow-hidden-html');
 
-  if(container.classList.contains('fechar')) {
+  if(container.classList.contains('fechar'))
+  {
    container.classList.remove('abrir');
   }
 })
@@ -15,13 +21,19 @@ btnAbrir.addEventListener('click', () => {
 btnFechar.addEventListener('click', () => {
   containerFechar.classList.add('fechar');
 
+  if (body.classList.contains('overflow-hidden') && html.classList.contains('overflow-hidden-html'))
+  {
+    html.classList.remove('overflow-hidden-html');
+    body.classList.remove('overflow-hidden');
+  }
 
-  if(container.classList.contains('abrir')) {
+  if(container.classList.contains('fechar'))
+  {
    containerFechar.classList.remove('fechar');
    container.classList.remove('abrir');
 
-
-  }else{
+  }else
+  {
     console.log('não tem classe para fechar');
   }
 })

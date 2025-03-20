@@ -14,7 +14,7 @@ class ListProduct {
                 "path" => "/img/produtos/"
             ],
             [
-                "id" => 2,
+                "id" => 2,  
                 "nome" => "OnePlus",
                 "descricao" => "OnePlus 8T-5G Lunar Silver",
                 "preco" => 2100.00,
@@ -55,7 +55,25 @@ class ListProduct {
                 "descricao"=> "Casaco masculino",
                 "preco"=> 210.00,
                 "quantidade"=> 200,
-                "imagem" => "1616502514_menshoodie.jpg",
+                "imagem" => "blusa.png",
+                "path" => "/img/produtos/"
+            ],
+            [
+                "id"=> 7,
+                "nome"=> "Tablet",
+                "descricao"=> "Tablet Samsung",
+                "preco"=> 1600.00,
+                "quantidade"=> 20,
+                "imagem" => "tablet.jpg",
+                "path" => "/img/produtos/"
+            ],
+            [
+                "id"=> 8,
+                "nome"=> "Tablet",
+                "descricao"=> "Tablet Samsung",
+                "preco"=> 1600.00,
+                "quantidade"=> 20,
+                "imagem" => "tablet.jpg",
                 "path" => "/img/produtos/"
             ]
         ];

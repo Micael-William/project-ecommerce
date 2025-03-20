@@ -1,0 +1,129 @@
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 90px;
+}
+
+.secao-titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    height: 12vh;
+}
+
+.secao-titulo > p {
+   
+    color: rgb(153, 153, 153);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+} 
+
+
+.secao-titulo{
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* background-color: rgb(241, 241, 241); */
+}
+
+.container-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 90%;
+    border: 0.5px solid #fefe;
+    border-radius: 10px;
+    box-shadow: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.quantidade {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+}
+
+.favoritar{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+.favoritar > i {
+    font-size: 24px;
+    color: #EC3B4D;
+    /* background-color: #EC3B4D; */
+}
+
+.logo-produto{
+    object-fit:contain;
+    width: 60%;
+    height: 60%;
+}
+
+.avaliacao {
+    display: flex;
+}
+
+.icone-star {
+    color: rgb(252, 208, 0);
+    fill: rgb(252, 208, 0);
+}
+
+.nome-produto {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+span {
+    font-family: sans-serif;
+}
+
+
+.preco-produto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #493D9E;
+}
+
+.btn-carrinho {
+    border: none;
+    padding: 15px;
+    background-color: #00569E;
+    color: #fff;
+    border-radius: 5px;
+    /* width: 60vw; */
+    width: 100%;
+    /* max-width: 80%; */
+}
+
+.cart {
+    margin-right:  5px;
+}
+
+
+
